@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify - Your favourite music is here</title>
+        <link rel="stylesheet" href="spotify.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="assets/logo.png" alt="Spotify"> Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1>Made for YOU ! Vibe Check - A mix for every mood</h1>
+            <div class="songItemContainer"> 
+                <!-- 10 Songs dynamically loaded with play/pause buttons on the left -->
+                 <div class="songItem" data-index="0">
+                    
+                    <img src="assets/1.jpg" alt="1">
+                    <span class="songName">Warriyo - Mortals </span>
+                    <i class="fa-regular fa-circle-play songItemPlay" data-index="0"></i>
+                </div>
+                <div class="songItem" data-index="1">
+                   
+                    <img src="assets/2.jpg" alt="2">
+                    <span class="songName">Cielo - Huma-Huma</span>
+                    <i class="fa-regular fa-circle-play songItemPlay" data-index ="1"></i>
+                </div>
+                <div class="songItem" data-index="2">
+       
+                    <img src="assets/3.jpg" alt="3">
+                    <span class="songName">DEAF KEV - Invincible</span>
+                    <i class="fa-regular fa-circle-play songItemPlay" data-index="2"></i>
+                </div>
+                <div class="songItem" data-index="3">
+                   
+                    <img src="assets/4.jpg" alt="4">
+                    <span class="songName">Different Heaven & EH!DE - My Heart</span>
+                    <i class="fa-regular fa-circle-play songItemPlay" data-index="3"></i>
+                </div>
+                <div class="songItem" data-index="4">
+                    
+                    <img src="assets/5.jpg" alt="5">
+                    <span class="songName">Janji - Heroes Tonight</span>
+                    <i class="fa-regular fa-circle-play songItemPlay" data-index="4"></i>
+                </div>
+                <div class="songItem" data-index="5">
+               
+                    <img src="assets/6.jpg" alt="6">
+                    <span class="songName">Marhaban ya Ramadhan </span>
+                    <i class="fa-regular fa-circle-play songItemPlay" data-index="5"></i>
+                </div>
+                <div class="songItem" data-index="6">
+                    
+                    <img src="assets/7.jpg" alt="7">
+                    <span class="songName">Limitless</span>
+                    <i class="fa-regular fa-circle-play songItemPlay" data-index="6"></i>
+                </div>
+                <div class="songItem" data-index="7">
+                  
+                    <img src="assets/8.jpg" alt="8">
+                    <span class="songName">Regular Fun </span>
+                    <i class="fa-regular fa-circle-play songItemPlay" data-index="7"></i>
+                </div>
+                <div class="songItem" data-index="8">
+                  
+                    <img src="assets/9.jpg" alt="9">
+                    <span class="songName">Roller coaster </span>
+                    <i class="fa-regular fa-circle-play songItemPlay" data-index="8"></i>
+                </div>
+                <div class="songItem" data-index="9">
+                   
+                    <img src="assets/10.jpg" alt="10">
+                    <span class="songName">Balada gitana</span>
+                    <i class="fa-regular fa-circle-play songItemPlay" data-index="9"></i>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <i class="fa-solid fa-backward-step" id="previous"></i>
+            <i class="fa-regular fa-circle-play" id="masterPlay"></i>
+            <i class="fa-solid fa-forward-step" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="assets/playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName"></span>
+            <!-- <span id="masterSongName">I Love You</span> -->
+        </div>
+    </div>
+    <script src="spo.js"></script>
+</body>
+</html>
